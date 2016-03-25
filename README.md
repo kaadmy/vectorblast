@@ -36,6 +36,8 @@ Everything is licensed under the GNU GPLv3+
 
 - **Mouse scroll** to switch weapons
 
+- **Escape** to quit
+
 ## Credits
 
 - **Xonotic**: sounds and some textures
