@@ -1,0 +1,58 @@
+comment, spawn platform
+cube, -10, -10, -0.4, 20, 20, 0.4
+
+comment, stairs
+cube, -3, -12, -0.8, 6, 2, 0.4
+cube, -3, -14, -1.2, 6, 2, 0.4
+cube, -3, -16, -1.6, 6, 2, 0.4
+cube, -3, -18, -2.0, 6, 2, 0.4
+
+comment, lower platform
+cube, -3, -24, -2.4, 13, 6, 0.4
+
+comment, lower pillar stairs
+cube, 2, -22, -2.0, 1, 2, 0.4
+cube, 3, -22, -2.0, 1, 2, 0.8
+cube, 4, -22, -2.0, 1, 2, 1.2
+
+comment, lower pillar
+cube, 5, -23, -2.0, 4, 4, 1.6, 0.5, warn01
+cube, 7.0, -22.0, -0.4, 1, 2, 0.4
+cube, 7.0, -22.0, 0.0, 1, 2, 1.0, 1, light01
+cube, 7.5, -21.5, 1.0, 0.5, 0.2, 1.2, 0.5, floor01
+cube, 7.5, -20.7, 1.0, 0.5, 0.2, 1.2, 0.5, floor01
+
+comment, upper walls
+cube, -6, -6, 0, 5, 0.4, 3
+cube, -6, -5.6, 0, 0.4, 4.6, 3
+
+comment, upper wall stairs
+cube, -5.6, -5.6, 0, 1.6, 1.6, 2
+cube, -4, -5.6, 0, 1.6, 1.6, 1
+
+comment, upper jump height pillars
+cube, 5, -10, 0, 5, 5, 1
+cube, 5, -5, 0, 5, 5, 2
+cube, 5, 0, 0, 5, 5, 3
+cube, 5, 5, 0, 5, 5, 4
+cube, 0, 5, 0, 5, 5, 5
+cube, -5, 5, 0, 5, 5, 6
+cube, -10, 5, 0, 5, 5, 7
+
+comment, model and physcube testing
+model, -2, 5, 3, -90, light01
+physcube, -2.4, 4.6, 2.7, 0.8, 0.4, 0.4
+model, 0, 5, 3, -90, light01
+physcube, -0.4, 4.6, 2.7, 0.8, 0.4, 0.4
+model, 2, 5, 3, -90, light01
+physcube, 1.6, 4.6, 2.7, 0.8, 0.4, 0.4
+
+comment, jumppadzzz!!!
+model, -8, 3, 0, 0, jumppad01
+jumppad, -8.6, 2.4, 0, 1.2, 1.2, 0.3, 0, 4.2, 24
+
+comment, -11, -10, 0, 1, 20, 1
+comment, -10, -11, 0, 20, 1, 1
+comment, -10, 10, 0, 20, 1, 1
+comment, 10, -10, 0, 1, 2, 1
+comment, 10, -6, 0, 1, 16, 1
