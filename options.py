@@ -65,9 +65,13 @@ def save():
 
 def load():
     global options
-    try:
-        f=open(os.path.join(os.path.expanduser("~"), config_path), "r")
-    except:
+    
+    if config_enable:
+        try:
+            f=open(os.path.join(os.path.expanduser("~"), config_path), "r")
+        except:
+            return True
+        from_string(f.read())
+        f.close()
+    else:
         return True
-    from_string(f.read())
-    f.close()

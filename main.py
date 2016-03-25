@@ -52,6 +52,8 @@ if options.load():
 
     options.add_bind("Mouse3", "scope")
 
+    options.add_bind("Escape", "quit")
+
 options.set("gravity", 16, False)
 options.set("player_superjump", True, False)
 options.set("player_jump_force", 7, False)
@@ -101,7 +103,8 @@ world.draw()
 
 binds={
     K_LCTRL: "left control",
-    K_RCTRL: "right control"
+    K_RCTRL: "right control",
+    K_ESCAPE: "escape"
     }
 
 world.precache()
@@ -117,8 +120,7 @@ try:
             elif e.type == VIDEORESIZE:
                 options.set("dpy_width", e.w, True)
                 options.set("dpy_height", e.h, True)
-#                options.set("dpy_width", 640, True)
-#                options.set("dpy_height", 480, True)
+
                 reopen()
 
             elif e.type == MOUSEMOTION:
@@ -179,6 +181,9 @@ try:
                 actions[action]=True
 
         player.set_controls(actions)
+
+        if "quit" in actions:
+            raise SystemExit
 
         clock.tick(0)
         d=(clock.get_time()/1000.0)*options.get("slowmo", float)
