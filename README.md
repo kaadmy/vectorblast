@@ -10,6 +10,16 @@ _By KaadmY and Void7_
 
 Vectorblast is a simple, parkour-style first-person shooter.
 
+## Dependencies
+
+- Python (obviously), tested with 2.7, will not work with 3+
+
+- PyOpenGL
+
+- PyGame
+
+_And maybe others, but I think that's it, unless I missed something obscure_
+
 ## License
 
 Everything is licensed under the GNU GPLv3+
